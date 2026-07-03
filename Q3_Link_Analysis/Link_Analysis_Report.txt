@@ -1,0 +1,25 @@
+Question 3: File System and Link Analysis
+
+1. echo > original.txt
+Created an original file with sample content.
+
+2. ln original.txt hardlink.txt
+Created a hard link. A hard link shares the same inode as the original file.
+
+3. ln -s original.txt symlink.txt
+Created a symbolic link. A symbolic link stores the path of the original file.
+
+4. ls -li
+Displayed inode numbers of all files.
+
+5. stat
+Displayed metadata such as inode, permissions, ownership, and timestamps.
+
+6. cat
+Verified the content of original file, hard link, and symbolic link.
+
+7. rm original.txt
+Deleted the original file to observe link behavior.
+
+Observation:
+The hard link continued to work after deleting the original file because it points to the same inode. The symbolic link stopped working because it only points to the original file path.

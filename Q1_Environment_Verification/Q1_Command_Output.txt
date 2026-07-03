@@ -1,0 +1,23 @@
+===== whoami =====
+lokesh
+===== groups =====
+staff everyone localaccounts _appserverusr admin _appserveradm com.apple.sharepoint.group.1 com.apple.sharepoint.group.2 _appstore _lpadmin _lpoperator _developer _analyticsusers com.apple.access_ftp com.apple.access_screensharing com.apple.access_ssh com.apple.access_remote_ae
+===== current shell =====
+/bin/zsh
+===== current working directory =====
+/Users/lokesh/linux-assignment/Q1_Environment_Verification
+===== files and directories =====
+total 8
+drwxr-xr-x  3 lokesh  staff   96 Jul  3 10:49 .
+drwxr-xr-x  7 lokesh  staff  224 Jul  3 10:49 ..
+-rw-r--r--  1 lokesh  staff  490 Jul  3 10:49 Q1_Command_Output.txt
+===== network connectivity =====
+PING google.com (192.178.173.100): 56 data bytes
+64 bytes from 192.178.173.100: icmp_seq=0 ttl=115 time=19.852 ms
+64 bytes from 192.178.173.100: icmp_seq=1 ttl=115 time=19.980 ms
+64 bytes from 192.178.173.100: icmp_seq=2 ttl=115 time=27.360 ms
+64 bytes from 192.178.173.100: icmp_seq=3 ttl=115 time=20.224 ms
+
+--- google.com ping statistics ---
+4 packets transmitted, 4 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 19.852/21.854/27.360/3.182 ms

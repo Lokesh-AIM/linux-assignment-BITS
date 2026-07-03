@@ -1,0 +1,22 @@
+Question 1: Linux Environment Verification
+
+1. whoami
+This command displays the current logged-in username.
+
+2. groups
+This command shows the groups associated with the current user account.
+
+3. echo $SHELL
+This command displays the current shell being used.
+
+4. pwd
+This command shows the current working directory.
+
+5. ls -la
+This command lists all files and directories, including hidden files, with permissions.
+
+6. ping -c 4 google.com
+This command checks network connectivity by sending packets to google.com.
+
+Observation:
+The Linux environment was verified successfully. User details, shell, directory location, workspace files, and network connectivity were checked.

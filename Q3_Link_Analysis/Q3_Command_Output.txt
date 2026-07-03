@@ -1,0 +1,27 @@
+===== inode numbers before deletion =====
+total 24
+37833136 -rw-r--r--  2 lokesh  staff  30 Jul  3 10:49 hardlink.txt
+37833136 -rw-r--r--  2 lokesh  staff  30 Jul  3 10:49 original.txt
+37833140 -rw-r--r--  1 lokesh  staff  42 Jul  3 10:49 Q3_Command_Output.txt
+37833139 lrwxr-xr-x  1 lokesh  staff  12 Jul  3 10:49 symlink.txt -> original.txt
+===== stat original.txt =====
+16777231 37833136 -rw-r--r-- 2 lokesh staff 0 30 "Jul  3 10:49:09 2026" "Jul  3 10:49:09 2026" "Jul  3 10:49:09 2026" "Jul  3 10:49:09 2026" 4096 8 0 original.txt
+===== stat hardlink.txt =====
+16777231 37833136 -rw-r--r-- 2 lokesh staff 0 30 "Jul  3 10:49:09 2026" "Jul  3 10:49:09 2026" "Jul  3 10:49:09 2026" "Jul  3 10:49:09 2026" 4096 8 0 hardlink.txt
+===== stat symlink.txt =====
+16777231 37833139 lrwxr-xr-x 1 lokesh staff 0 12 "Jul  3 10:49:09 2026" "Jul  3 10:49:09 2026" "Jul  3 10:49:09 2026" "Jul  3 10:49:09 2026" 4096 0 0 symlink.txt
+===== reading all files before deletion =====
+This is original file content
+This is original file content
+This is original file content
+===== deleting original.txt =====
+===== inode numbers after deletion =====
+total 16
+37833136 -rw-r--r--  1 lokesh  staff    30 Jul  3 10:49 hardlink.txt
+37833140 -rw-r--r--  1 lokesh  staff  1131 Jul  3 10:49 Q3_Command_Output.txt
+37833139 lrwxr-xr-x  1 lokesh  staff    12 Jul  3 10:49 symlink.txt -> original.txt
+===== reading hard link after deletion =====
+This is original file content
+===== reading symbolic link after deletion =====
+cat: symlink.txt: No such file or directory
+Symbolic link failed because original file was deleted.

@@ -1,0 +1,476 @@
+===== available storage devices on macOS =====
+/dev/disk0 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *251.0 GB   disk0
+   1:             Apple_APFS_ISC Container disk1         524.3 MB   disk0s1
+   2:                 Apple_APFS Container disk3         245.1 GB   disk0s2
+   3:        Apple_APFS_Recovery Container disk2         5.4 GB     disk0s3
+
+/dev/disk3 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +245.1 GB   disk3
+                                 Physical Store disk0s2
+   1:                APFS Volume Macintosh HD            12.6 GB    disk3s1
+   2:              APFS Snapshot com.apple.os.update-... 12.6 GB    disk3s1s1
+   3:                APFS Volume Preboot                 9.1 GB     disk3s2
+   4:                APFS Volume Recovery                1.3 GB     disk3s3
+   5:                APFS Volume Data                    126.2 GB   disk3s5
+   6:                APFS Volume VM                      20.5 KB    disk3s6
+
+===== mounted file systems and disk usage =====
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   228Gi    12Gi    89Gi    12%    459k  936M    0%   /
+devfs            204Ki   204Ki     0Bi   100%     707     0  100%   /dev
+/dev/disk3s6     228Gi    20Ki    89Gi     1%       0  936M    0%   /System/Volumes/VM
+/dev/disk3s2     228Gi   8.4Gi    89Gi     9%    1.5k  936M    0%   /System/Volumes/Preboot
+/dev/disk3s4     228Gi   7.5Mi    89Gi     1%     107  936M    0%   /System/Volumes/Update
+/dev/disk1s2     500Mi   6.0Mi   483Mi     2%       1  4.9M    0%   /System/Volumes/xarts
+/dev/disk1s1     500Mi   5.7Mi   483Mi     2%      31  4.9M    0%   /System/Volumes/iSCPreboot
+/dev/disk1s3     500Mi   812Ki   483Mi     1%      71  4.9M    0%   /System/Volumes/Hardware
+/dev/disk3s5     228Gi   118Gi    89Gi    57%    1.1M  936M    0%   /System/Volumes/Data
+map auto_home      0Bi     0Bi     0Bi   100%       0     0     -   /System/Volumes/Data/home
+===== inode usage =====
+Filesystem     512-blocks      Used Available Capacity iused     ifree %iused  Mounted on
+/dev/disk3s1s1  478724992  24546696 187210368    12%  458725 936051840    0%   /
+devfs                 407       407         0   100%     707         0  100%   /dev
+/dev/disk3s6    478724992        40 187210368     1%       0 936051840    0%   /System/Volumes/VM
+/dev/disk3s2    478724992  17677856 187210368     9%    1452 936051840    0%   /System/Volumes/Preboot
+/dev/disk3s4    478724992     15456 187210368     1%     107 936051840    0%   /System/Volumes/Update
+/dev/disk1s2      1024000     12328    988560     2%       1   4942800    0%   /System/Volumes/xarts
+/dev/disk1s1      1024000     11768    988560     2%      31   4942800    0%   /System/Volumes/iSCPreboot
+/dev/disk1s3      1024000      1624    988560     1%      71   4942800    0%   /System/Volumes/Hardware
+/dev/disk3s5    478724992 246466616 187210368    57% 1084726 936051840    0%   /System/Volumes/Data
+map auto_home           0         0         0   100%       0         0     -   /System/Volumes/Data/home
+===== mounted file systems =====
+/dev/disk3s1s1 on / (apfs, sealed, local, read-only, journaled)
+devfs on /dev (devfs, local, nobrowse)
+/dev/disk3s6 on /System/Volumes/VM (apfs, local, noexec, journaled, noatime, nobrowse)
+/dev/disk3s2 on /System/Volumes/Preboot (apfs, local, journaled, nobrowse)
+/dev/disk3s4 on /System/Volumes/Update (apfs, local, journaled, nobrowse)
+/dev/disk1s2 on /System/Volumes/xarts (apfs, local, noexec, journaled, noatime, nobrowse)
+/dev/disk1s1 on /System/Volumes/iSCPreboot (apfs, local, journaled, nobrowse)
+/dev/disk1s3 on /System/Volumes/Hardware (apfs, local, journaled, nobrowse)
+/dev/disk3s5 on /System/Volumes/Data (apfs, local, journaled, nobrowse, protect, root data)
+map auto_home on /System/Volumes/Data/home (autofs, automounted, nobrowse)
+===== home directory usage =====
+du: /Users/lokesh/Pictures/Photo Booth Library: Operation not permitted
+du: /Users/lokesh/Pictures/Photos Library.photoslibrary: Operation not permitted
+du: /Users/lokesh/Library/Application Support/MobileSync: Operation not permitted
+du: /Users/lokesh/Library/Application Support/CallHistoryTransactions: Operation not permitted
+du: /Users/lokesh/Library/Application Support/CloudDocs: Operation not permitted
+du: /Users/lokesh/Library/Application Support/com.apple.sharedfilelist: Operation not permitted
+du: /Users/lokesh/Library/Application Support/Knowledge: Operation not permitted
+du: /Users/lokesh/Library/Application Support/com.apple.TCC: Operation not permitted
+du: /Users/lokesh/Library/Application Support/FileProvider: Operation not permitted
+du: /Users/lokesh/Library/Application Support/AddressBook: Operation not permitted
+du: /Users/lokesh/Library/Application Support/FaceTime: Operation not permitted
+du: /Users/lokesh/Library/Application Support/DifferentialPrivacy: Operation not permitted
+du: /Users/lokesh/Library/Application Support/com.apple.avfoundation/Frecents: Operation not permitted
+du: /Users/lokesh/Library/Application Support/CallHistoryDB: Operation not permitted
+du: /Users/lokesh/Library/Assistant/SiriVocabulary: Operation not permitted
+du: /Users/lokesh/Library/Daemon Containers: Operation not permitted
+du: /Users/lokesh/Library/Autosave Information: Operation not permitted
+du: /Users/lokesh/Library/IdentityServices: Operation not permitted
+du: /Users/lokesh/Library/Messages: Operation not permitted
+du: /Users/lokesh/Library/HomeKit: Operation not permitted
+du: /Users/lokesh/Library/Sharing: Operation not permitted
+du: /Users/lokesh/Library/com.apple.aiml.instrumentation: Operation not permitted
+du: /Users/lokesh/Library/Mail: Operation not permitted
+du: /Users/lokesh/Library/Trial: Operation not permitted
+du: /Users/lokesh/Library/AppleMediaServices: Operation not permitted
+du: /Users/lokesh/Library/DuetExpertCenter: Operation not permitted
+du: /Users/lokesh/Library/Accounts: Operation not permitted
+du: /Users/lokesh/Library/Safari: Operation not permitted
+du: /Users/lokesh/Library/WebDriver: Operation not permitted
+du: /Users/lokesh/Library/Biome: Operation not permitted
+du: /Users/lokesh/Library/IntelligencePlatform: Operation not permitted
+du: /Users/lokesh/Library/Shortcuts: Operation not permitted
+du: /Users/lokesh/Library/Mobile Documents: Operation not permitted
+du: /Users/lokesh/Library/Suggestions: Operation not permitted
+du: /Users/lokesh/Library/Weather: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.stocks-news: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.photolibraryd.private: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.feedback: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.siri.inference: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.telephonyutilities.callservicesd: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.swtransparency: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.coreservices.useractivityd: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.ArchiveUtility.PKSignedContainer: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.accessibility.voicebanking: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.icloud.searchpartyuseragent: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.siri.referenceResolution: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.stocks: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.usernoted: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.VoiceMemos.shared: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.contacts: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/.SiriTodayViewExtension: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.secure-control-center-preferences: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.chronod: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/com.apple.MailPersonaStorage: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.private.translation: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.appstoreagent: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.portrait.BackgroundReplacement: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/8UNVXQC2DG.group.com.urban-vpn.mac: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.icloud.fmfcore: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.liveactivitiesd: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.amsondevicestoraged: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.SiriTTS: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.notes.import: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.calendar: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.newsd: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.ip.redirects: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.siri.userfeedbacklearning: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.gamecenter: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.tips: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.tv.sharedcontainer: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.loginwindow.persistent-apps: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.spotlight: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.studentd: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.ManagedSettings: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.sharingd: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.printtool: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.corerepair: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.news: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.mobileslideshow.PhotosFileProvider: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.scopedbookmarkagent: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.tvappservices.container: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.weather: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/com.apple.systempreferences.cache: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.feedbacklogger: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/22MMUN2RN5.lv: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.controlcenter: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.siri.remembers: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.notes: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/com.apple.stickersd.group: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.screencapture: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/243LU875E5.groups.com.apple.podcasts: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.lenovo.smartconnect.ios: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.UserNotifications: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.tipsnext: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/TC3Q7MAJXF.com.adguard.safari.AdGuard: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.moments: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.Safari.SandboxBroker: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.transparency: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.webkit.webpushd: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.reminders: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.findmy.findmylocateagent: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.mail: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/com.apple.bird: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.DeviceActivity: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.replayd: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/22MMUN2RN5.ve: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.Journal: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/com.apple.Home.group: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.iCloudDrive: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.is.workflow.my.app: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.energykit: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/com.apple.PreviewLegacySignaturesConversion: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.rapportd: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.siri.ASR.shared: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.replicatord: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.Photos.PhotosFileProvider: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.icloud.fmipcore: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.AppleSpell: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.mlhost: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.FamilyControls: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/75TY9UT8AY.com.TickTick.task.mac: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.PegasusConfiguration: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.is.workflow.shortcuts: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/group.com.apple.shortcuts: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/com.apple.MessagesLegacyTransferArchive: Operation not permitted
+du: /Users/lokesh/Library/Group Containers/6P9PN587KS.com.khanov.Blocker: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.adguard.safari.AdGuard.BlockerSocial/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.CloudPhotosConfiguration/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.PressAndHold/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.languageassetd/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/maccatalyst.com.frontrow.vlog/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.wallpaper.extension.macintosh/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.iCal/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.journal/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.siri.SiriPrivateLearningAnalytics.SiriUserSegmentation/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.QuickTimePlayerX/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.VoiceMemos: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.mlhost.TelemetryWorker/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.PassKit.PaymentAuthorizationUIExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.ax.KonaTTSSupport.KonaSynthesizer/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.CoreDevice.remotepairingd/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.archiveutility: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.wallpaper.extension.gradient/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.LinkPresentation.LinkSnapshotGeneratorService/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.ScreenTimeAgent/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.LighthouseBitacoraFramework.BitacoraWorker/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.lighthouse.InferenceExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Home.HomeEnergyWidgets/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.mobiletimer-framework.MobileTimerIntents/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.weather.widget/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.photos.ImageConversionService/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.PhotoBooth/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.controls.screenshot/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.windowmanager.StageManagerOnboarding/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.khanov.BlockerX.MacBlockTrackersExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.systempreferences.SpotlightIndexExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Photos.PhotosFileProvider/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.calendar.CalendarIntentsExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.siri.ODDIPoirotMetricsExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.quicklook.QuickLookUIService/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.mail.MailQuickLookExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.PlatformSSO.AccessKey/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.wallpaper.extension.sonoma/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.poirot.MessagesAnalyticsWorker/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.iCal.CalendarWidgetExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.khanov.BlockerX.MacBlockAdultExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.contacts.donation-agent/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.photolibraryd/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.speech.MacinTalkFramework.WardaSynthesizer/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.lenovo.smartconnect.ios/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.AvatarUI.AvatarPickerMemojiEditor/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.wallpaper.extension.image/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/DD43A171-F5AA-491B-A9BE-2B5EE53724D1/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.siri.media-indexer/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.sharing.ShareSheetUI/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.WorkflowKit.ShortcutsViewService/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.StorageManagement.MessagesHelper/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.ExtensionsSettings.LegacyPluginEnablementExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.GameOverlayViewService/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.BKAgentService/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.tips.Widget/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.mediastream.mstreamd/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.news.tag/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.LookupViewService/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.tonelibraryd/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Maps/Data/Maps: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Notes.SpotlightIndexExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.AMPDeviceDiscoveryAgent/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.systempreferences.AppleIDSettings/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.SafariPlatformSupport.Helper/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Passwords/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.aiml.mlpt.FedStats.MLHostPluginClassB/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.podcasts.MacPodcastsStorageExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Safari.BrowserDataImportingService/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.adguard.safari.AdGuard.BlockerSecurity/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.parsec.SafariBrowsingAssistantWorker/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Home: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Safari: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Keyboard-Settings.extension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.wallpaper.agent/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.IOUIAgent/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.podcasts.SpotlightIndexExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.CloudDocsDaemon.StorageManagement/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.adguard.safari.AdGuard.BlockerPrivacy/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.lighthouse.SAExtensionOrchestrator/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Safari.CacheDeleteExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.reminders.WidgetExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.lighthouse.BiomeSELFIngestor/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.unilog.SiriUploadWorker/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.AboutThisMacLauncher/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.aiml.RepackagingWorker/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.AMPArtworkAgent/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.FollowUpSettings.FollowUpSettingsExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.iBooksX.DiskSpaceEfficiency/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.messages.StorageManagementExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.clock.WorldClockWidget/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.TickTick.task.mac/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.adguard.safari.AdGuard.BlockerCustom/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.reminders.macOSIntentsExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.findmy.FindMyWidgetPeople/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.PeopleViewService.PeopleWidget-macOS/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.reminders.spotlightindexextension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.news.widget/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.ScreenTimeWidgetApplication.ScreenTimeWidgetExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Spotlight-Settings.extension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.accessibility.axassetsd/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.STMExtension.OtherUsers/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.shortcuts.ShortcutLiveActivityWidget/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.ExtensionsSettings.DefaultExtensionEnablement/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.mobileslideshow.photospicker/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.PeopleViewService.SelectPerson-iOS/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.SiriMetrics.SiriTurnRestatementExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.speech.MacinTalkFramework.MacinTalkAUSP/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.khanov.BlockerX.MacWidget/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.photoanalysisd/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.amp.devicesui/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.khanov.BlockerX.MacBlockAdsExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.wallpaper.extension.sequoia/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Photos.PhotosReliveWidget/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.controls.display/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.notificationcenterui/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.wallpaper.extension.aerials/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.MediaExtensions-Settings/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.lighthouse.IFTranscriptSELFIngestor/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.TV.TVStorageExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Sound-Settings.SoundIntents/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.adguard.safari.AdGuard.BlockerOther/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.khanov.BlockerX/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.wallpaper.extension.dynamic/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.aiml.mlpt.FedStats.MLHostPlugin/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.SystemExtensions-Settings.extension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.mail: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.iBooks.iBooksSpotlightExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.AMSUIPaymentViewService/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.DataDetectorsLocalSources/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Photos/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.FamilyControlsAgent/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.CharacterPaletteIM/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.aiml.UnilogTelemetryWorker/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.MobileSMS: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.PlatformSSOToken/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.SafariFoundation.CredentialProviderExtensionHelper/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.CalendarWeatherKitService/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.iCal.CalendarNotificationContentExtention-OSX/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Music.MusicCacheExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.StorageManagement.CloudStorageHelper/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.LoginUserService/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.AppStore/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.news.widgetintents/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.siri.ODDIPoirotExperimentationExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.QuickLookUIFramework.QLPreviewGenerationExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.controlcenter.ringlighthelper/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.wallpaper.agent.controls/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Siri/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.AppleMediaServicesUI.UtilityExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.VoiceMemos.VoiceMemosSettingsWidget/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Notes: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.shortcuts.ShortcutsWidget/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.printcenter.PrintCenterWidget/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.siri.metrics.AssetMetricsExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.mail.SpotlightIndexExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.STMExtension.Trash/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.MediaMLPluginApp.MediaMLExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Batteries.BatteriesAvocadoWidgetExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.MailCacheDelete/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.NeptuneOneExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.adguard.safari.AdGuard.BlockerExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.STMExtension.iOSFiles/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.AvatarUI.AvatarPickerPosePicker/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.STMExtension.Applications/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.mlhost.CloudWorker/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.DoNotDisturb.Intents/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.siri.metrics.DevicePropertiesExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.reminders/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.helpviewer/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.ManagedSettings.ManagedSettingsMacOSExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Dictionary/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.siri.GMSSELFIngestor/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.journal.widgets/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.TextEdit/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.AccessibilitySettingsWidgetExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.khanov.BlockerX.MacBlockCustomExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.CryptoTokenKit.pivtoken/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.windowmanager.ShowDesktopEducation/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.fskit.msdos/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.generativeassistanttools.GenerativeAssistantExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Music.MusicStorageExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Desktop-Settings.extension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Photos.StorageManagementExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Displays-Settings.extension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.siri.SiriSuggestionsLightHousePlugin/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.geod/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.iCal.FaceTimeExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.news: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.AppleAccountUI.AAUIFollowUpExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.TV.TVCacheExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.speech.SpeechSynthesisServerXPC/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.CaptiveNetworkAssistant/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Chess/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.khanov.BlockerX.MacBackgroundAssetsExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/TC3Q7MAJXF.com.adguard.safari.AdGuard.Helper/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.DifferentialPrivacy.TelemetryAggregator/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.DataDetectorsViewService/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.adguard.safari.AdGuard/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.STMExtension.Mail/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.urban-vpn.mac/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.calculator.CalculatorWidget/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.WindowManager.controls/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.texttospeech.SiriAUSP/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.STMExtension.Developer/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.routined/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.findmy.FindMyWidgetItems/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.khanov.BlockerX.MacBlockAnnoyancesExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Screen-Time-Settings.extension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.SiriUI.SiriUISetupXPC/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.corerecents.recentsd/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.STMExtension.GarageBand/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.stocks.widget/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.ScreenTimeWidgetApplication.ScreenTimeWidgetIntentsExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Notes.WidgetExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.systempreferences.GeneralSettings/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.weather/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.khanov.BlockerX.MacWebExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Safari.SafariWidgetExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.khanov.BlockerX.SafariExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.LinkedNotesUIService/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Preview/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.UsageTrackingAgent/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Home.HomeWidget.Interactive/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.FamilyExtensionHost.FamilyOutOfProcessUIExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.adguard.safari.AdGuard.Extension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.siri.metrics.MetricsExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.UniversalAccess.UASettingsShortcuts/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.CryptoTokenKit.ctkcard.ctkcardtoken/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.journal.widgets.secure/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.stocks: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.lighthouse.IFTelemetrySELFIngestor/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.dock.controls/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.khanov.BlockerX.MacBlockInternationalExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.lighthouse.PnROnDeviceWorker/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Safari.SafariLinkExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Safari.WebApp: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.unilog.search.MacMailSearchLogProcessor/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Internet-Accounts-Settings.extension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.quicklook.ui.helper/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.siri.ODDIMetricsExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.share.Mail.compose/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.AvatarUI.AvatarPickerMemojiPicker/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.SiriNCService/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Notes.IntentsExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.unilog.SearchUploadWorker/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.GameTrampoline/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.ax.MauiTTSSupport.MauiAUSP/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.ScreenSharing/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.lemon.lvoverseas/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.weather.WeatherIntents/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.clock/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.AirPlayUIAgent/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.AquaAppearanceHelper/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.AddressBook/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.fskit.ModuleEnablement/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.voicebankingd/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.ActionKit.BundledIntentHandler/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.siri.ODDIExperimentationExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.systempreferences/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.CloudDocs.iCloudDriveFileProvider/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.VoiceMemos.RecordWidget/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.podcasts.widget/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.contacts.ContactsCoreSpotlightExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.wallpaper.extension.legacy/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.mediaanalysisd/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.urban-vpn.mac.pt/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.CalendarWidget.IntentsExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.MobileSMS.MessagesActionExtension/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.Family/Data: Operation not permitted
+du: /Users/lokesh/Library/Containers/com.apple.CalendarFileHandler/Data: Operation not permitted
+du: /Users/lokesh/Library/ContainerManager: Operation not permitted
+du: /Users/lokesh/Library/PersonalizationPortrait: Operation not permitted
+du: /Users/lokesh/Library/Photos: Operation not permitted
+du: /Users/lokesh/Library/Metadata/CoreSpotlight: Operation not permitted
+du: /Users/lokesh/Library/Cookies: Operation not permitted
+du: /Users/lokesh/Library/CoreFollowUp: Operation not permitted
+du: /Users/lokesh/Library/StatusKit: Operation not permitted
+du: /Users/lokesh/Library/DoNotDisturb: Operation not permitted
+du: /Users/lokesh/Library/Caches/familycircled: Operation not permitted
+du: /Users/lokesh/Library/Caches/com.apple.HomeKit: Operation not permitted
+du: /Users/lokesh/Library/Caches/CloudKit: Operation not permitted
+du: /Users/lokesh/Library/Caches/com.apple.Safari: Operation not permitted
+du: /Users/lokesh/Library/Caches/com.apple.containermanagerd: Operation not permitted
+du: /Users/lokesh/Library/Caches/com.apple.Safari.SafeBrowsing: Operation not permitted
+du: /Users/lokesh/Library/Caches/FamilyCircle: Operation not permitted
+du: /Users/lokesh/Library/Caches/com.apple.homed: Operation not permitted
+du: /Users/lokesh/Library/Caches/com.apple.ap.adprivacyd: Operation not permitted
+du: /Users/lokesh/.Trash: Operation not permitted
+du: /Users/lokesh/Documents: Operation not permitted
+du: /Users/lokesh/Downloads: Operation not permitted
+ 11G	/Users/lokesh
+===== current directory usage =====
+ 44K	./Q5_Command_Output.txt
+488K	./Screenshot 2026-07-03 at 11.02.29.png

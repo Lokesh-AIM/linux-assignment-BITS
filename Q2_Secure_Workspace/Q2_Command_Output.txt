@@ -1,0 +1,29 @@
+===== directory structure =====
+project_workspace
+project_workspace/config
+project_workspace/config/settings.conf
+project_workspace/docs
+project_workspace/docs/readme.txt
+project_workspace/logs
+project_workspace/logs/app.log
+project_workspace/src
+===== permissions before modification =====
+total 0
+drwxr-xr-x  3 lokesh  staff  96 Jul  3 10:49 config
+drwxr-xr-x  3 lokesh  staff  96 Jul  3 10:49 docs
+drwxr-xr-x  3 lokesh  staff  96 Jul  3 10:49 logs
+drwxr-xr-x  2 lokesh  staff  64 Jul  3 10:49 src
+16777231 37833129 -rw-r--r-- 1 lokesh staff 0 0 "Jul  3 10:49:09 2026" "Jul  3 10:49:09 2026" "Jul  3 10:49:09 2026" "Jul  3 10:49:09 2026" 4096 0 0 project_workspace/docs/readme.txt
+===== umask value =====
+0022
+===== changing permissions =====
+===== permissions after modification =====
+drwx------  6 lokesh  staff  192 Jul  3 10:49 project_workspace
+total 0
+drwxr-xr-x  3 lokesh  staff  96 Jul  3 10:49 config
+drwxr-xr-x  3 lokesh  staff  96 Jul  3 10:49 docs
+drwxr-xr-x  3 lokesh  staff  96 Jul  3 10:49 logs
+drwxr-xr-x  2 lokesh  staff  64 Jul  3 10:49 src
+===== ownership details =====
+lokesh
+uid=503(lokesh) gid=20(staff) groups=20(staff),12(everyone),61(localaccounts),79(_appserverusr),80(admin),81(_appserveradm),701(com.apple.sharepoint.group.1),702(com.apple.sharepoint.group.2),33(_appstore),98(_lpadmin),100(_lpoperator),204(_developer),250(_analyticsusers),395(com.apple.access_ftp),398(com.apple.access_screensharing),399(com.apple.access_ssh),400(com.apple.access_remote_ae)

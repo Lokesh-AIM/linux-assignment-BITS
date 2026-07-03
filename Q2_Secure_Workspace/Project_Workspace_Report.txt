@@ -1,0 +1,28 @@
+Question 2: Secure Project Workspace Setup
+
+1. mkdir -p project_workspace/{docs,src,config,logs}
+Created a structured project workspace with separate folders for documents, source code, configuration, and logs.
+
+2. touch commands
+Created sample project files inside the workspace.
+
+3. find
+Displayed the directory structure created for the project workspace.
+
+4. ls -l
+Displayed file permissions before and after permission modification.
+
+5. stat
+Displayed detailed metadata of a file including ownership, permissions, and timestamps.
+
+6. umask
+Displayed the default permission mask used while creating files and directories.
+
+7. chmod
+Changed permissions to secure project files and directories.
+
+8. whoami and id
+Displayed user identity and ownership information.
+
+Observation:
+Permissions protect project data by controlling read, write, and execute access. Sensitive files like configuration files should have restricted permissions.
